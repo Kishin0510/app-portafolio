@@ -5,69 +5,102 @@
   <title>Portafolio</title>
   <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-gray-200 text-gray-800">
-  <div class="flex flex-col md:flex-row justify-center" >
-    <img src="../assets/images/profile_pic.png" alt="Description of image" class="w-64 h-64">
-    <h1 class="text-4xl font-bold text-center py-5 mt-40">Estudiante Nicolás Tapia C.</h1>
+<body class="bg-indigo-100 text-gray-800">
+  <div id="sobremi" class="flex flex-row justify-center bg-gradient-to-t from-indigo-100 to-blue-300" >
+    <img src="../assets/images/profile_pic.jpg" alt="Description of image" class="w-64 h-64 rounded-full m-5 translate-x-[-10%] object-cover">
+    <h1 class="text-4xl font-bold text-center mr-16 mt-56">Estudiante Nicolás Tapia C.</h1>
   </div>
-  <div class="flex justify-center px-16 m-16 font-mono">
+
+  <nav class="font-bold mb-16 font-mono">
+    <ul class="flex space-x-4 text-center text-2xl font-mono justify-center">
+      <li><a href="#sobremi" class="bg-blue-400 hover:bg-blue-500 rounded-full p-2">Sobre mi</a></li>
+      <li><a href="#habilidades" class="bg-blue-400 hover:bg-blue-500 rounded-full p-2">Habilidades/Experiencia</a></li>
+      <li><a href="#proyectos" class="bg-blue-400 hover:bg-blue-500 rounded-full p-2">Proyectos</a></li>
+      <li><a href="#contacto" class="bg-blue-400 hover:bg-blue-500 rounded-full p-2">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="flex justify-center py-4 px-16 mx-80 my-24 font-mono bg-indigo-50 rounded-full">
     <div>
       <h2 class="text-2xl font-bold text-center font-mono">Sobre mi</h2>
-      <p class="text-justify text-lg px-80 mt-5 justify-center">
+      <p class="text-justify text-lg px-16 m-5 justify-center">
         Ingeniero Civil en Computación e Informática en desarrollo de Antofagasta. Con
         conocimientos en desarrollo de software y ciberseguridad. Minor en ciberseguridad
         en desarrollo.
       </p>
       <h2 class="text-2xl font-bold text-center font-mono">Aspiraciones</h2>
-      <p class="text-justify text-lg px-80 mt-5 justify-center">
+      <p class="text-justify text-lg px-16 m-5 justify-center">
         Principalmente me gustaría trabajar en el área de ciberseguridad, ya que es un área que
         me gustaría seguir aprendiendo. Respecto al desarollo de software, tengo experiencia en
         múltiples trabajos que abarcan tanto desarrollo web como desarrollo de aplicaciones móviles.
       </p>
     </div>
   </div>
-  <div class="flex justify-center px-16 m-16 font-mono">
-    <div>
+  <div id="habilidades" class="flex justify-center px-16 m-16 font-mono ">
+    <div class="bg-indigo-50 rounded-full p-8">
       <h2 class="text-2xl font-bold text-center">Habilidades</h2>
       <ul class="text-center text-lg px-5">
-        <li>Desarrollo de software</li>
-        <li>Ciberseguridad</li>
-        <li>Desarrollo web</li>
-        <li>Desarrollo de aplicaciones móviles</li>
+        <li>Manejo de framework Vue3</li>
+        <li>Manejo de framework Asp.Net Core</li>
+        <li>Conocimientos en Angular</li>
+        <li>Manejo en Javascript</li>
+        <li>Conocimientos en Unity</li>
       </ul>
     </div>
-    <div>
+    <div class="bg-indigo-50 rounded-full p-8">
       <h2 class="text-2xl font-bold text-center">Experiencia</h2>
       <ul class="text-center text-lg px-5">
-        <li>Desarrollo de software en empresa de desarrollo de software</li>
-        <li>Desarrollo de aplicaciones móviles en empresa de desarrollo de software</li>
-        <li>Desarrollo de software en empresa de desarrollo de software</li>
-        <li>Desarrollo de software en empresa de desarrollo de software</li>
+        <li>Desarrollo de software Web</li>
+        <li>Desarrollo de Aplicaciones Móviles</li>
+        <li>Desarrollo de Videojuego en plataforma Unity</li>
+        <li>Desarrollo de APIs</li>
       </ul>
     </div>
   </div>
-  <div class="font-bold mb-16">
-    <nav>
-      <ul class="flex space-x-4 text-center text-2xl font-mono justify-center">
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+
+
+  <div class="px-16 mx-64 pt-16 border-4 border-blue-600 rounded-xl bg-blue-500 bg-opacity-95 font-mono">
+    <h2 id="proyectos" class="text-2xl font-bold text-center">Audio Flow API</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center py-8 px-64 mb-8 bg-indigo-50 rounded-xl">
+      <img src="../assets/images/apiaf.png" alt="Description of image" class="w-64 h-64 object-cover">
+      <p class="text-justify text-lg px-16 mt-5 justify-center">
+        Colaboré en el desarrollo de la API de Audio Flow, ésta permite a los usuarios subir y escuchar música. La API
+        permite a los usuarios subir música en formato mp3 y escucharla en la aplicación móvil y web.
+        <a href="https://github.com/Benjh4dev/API-AudioFlow.git" class="text-justify text-lg mx-16 justify-center font-bold text-blue-500 underline">Repositorio</a>
+      </p>
+    </div>
+    <h2 id="AFApp" class="text-2xl font-bold text-center">Audio Flow Mobile App</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center py-8 px-64 mb-8 bg-indigo-50 rounded-xl">
+      <img src="../assets/images/WebAudioflow.png" alt="Description of image" class="w-64 h-64 object-cover">
+      <p class="text-justify text-lg px-16 mt-5 justify-center">
+      Audio Flow Mobile App es una aplicación móvil que permite a los usuarios escuchar música
+      subida por otros usuarios. La aplicación permite a los usuarios subir música en formato
+      mp3 y escucharla en la aplicación móvil.
+      <a href="https://github.com/Benjh4dev/CLIENT-MOVIL-Audioflow.git" class="text-justify text-lg mx-16 justify-center font-bold text-blue-500 underline">Repositorio.</a>
+      </p>
+
+    </div>
+
+  </div>
+  <div id="contacto" class="font-mono bg-indigo-50 mx-96 mt-5 p-5 rounded-full">
+    <h2 id="contacto" class="text-2xl font-bold text-center">Contacto</h2>
+    <div class="flex-col text-center">
+      <p>Correo: nicolas.tapia02@alumnos.ucn.cl</p>
+      <p>Número de contacto: 971932768</p>
+      <p>Ubicación: Antofagasta, Chile</p>
+    </div>
   </div>
 
-
+  <footer class="flex justify-center space-x-4 mb-12 mt-5">
+    <a  class="block text-center" href="https://www.instagram.com/n_kishin/?next=%2F">
+    <img src="../assets/images/Instagram_icon.png" alt="Description of image" class="mx-auto w-12 h-auto">
+    </a>
+    <a  class="block text-center" href="https://www.linkedin.com/in/nicol%C3%A1s-tapia-carrasco-a63a72289/">
+    <img src="../assets/images/174857.png" alt="Description of image" class="mx-auto w-12 h-auto">
+    </a>
+    <a  class="block text-center" href="https://github.com/Kishin0510">
+    <img src="../assets/images/25231.png" alt="Description of image" class="mx-auto w-12 h-auto">
+    </a>
+  </footer>
 </body>
-<footer class="flex justify-center space-x-4 mb-16">
-  <a  class="block text-center" href="https://www.instagram.com/n_kishin/?next=%2F">
-  <img src="../assets/images/Instagram_icon.png" alt="Description of image" class="mx-auto w-12 h-auto">
-  </a>
-  <a  class="block text-center" href="https://www.linkedin.com/in/nicol%C3%A1s-tapia-carrasco-a63a72289/">
-  <img src="../assets/images/174857.png" alt="Description of image" class="mx-auto w-12 h-auto">
-  </a>
-  <a  class="block text-center" href="https://github.com/Kishin0510">
-  <img src="../assets/images/25231.png" alt="Description of image" class="mx-auto w-12 h-auto">
-  </a>
-</footer>
 </html>
